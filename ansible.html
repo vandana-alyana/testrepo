@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Page Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+
+        #message {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        #button {
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="message">Welcome to the Single Page Application!</div>
+
+    <button id="button" onclick="changeMessage()">Click me</button>
+
+    <script>
+        function changeMessage() {
+            var messageElement = document.getElementById('message');
+            messageElement.textContent = 'Hello, you clicked the button!';
+        }
+    </script>
+
+</body>
+</html>
